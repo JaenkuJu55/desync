@@ -7,12 +7,15 @@
     width: 90%;
     position: relative;
     left: 5%;
+    img{
+        width: 20%;
+    }
 }
 
 header{
     min-height: 120vh;
     position: relative;
-    background: linear-gradient(67deg, #222324, #67b3cf);
+    background: linear-gradient(270deg, #222324, #000000);
     .intro-text{
         position: absolute;
         top: 55%;
@@ -25,14 +28,14 @@ header{
 section{
     height: 100vh;
     width: 100%;
-    background-color: white;
+    background-color: lightgray;
     position: relative;
 }
 
 .bg-dark {
     border-bottom-style: solid;
     border-width: 1px;
-    border-color: rgba(0, 0, 0, 0.459);
+    border-color: white;
     background-color: rgba(0, 0, 0, 0)!important;
 }
 
@@ -40,4 +43,8 @@ section{
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
+}
+
+.nav-item{
+    padding-left: 50px;
 }
