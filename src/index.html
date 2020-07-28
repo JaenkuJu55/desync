@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desynchronised</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -12,18 +13,20 @@
         
 
         <header>
-            <div class="navBar">
+            <div class="navBar" id="navRiba">
                 <nav class ="navbar navbar-expand-lg navbar-dark bg-dark">
                     <a class="navbar-brand" href="index.html">
-                        <img src="..\src\imgs\White Desynchronised Logo.png">
+                         <img src="..\src\imgs\White Desynchronised Logo.png" class="desyncLogo">
                     </a>
             
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="burger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
                     </button>
             
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class = "nav navbar-nav navbar-center">
+                        <ul class = "navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Portfolio</a>
                             </li>
@@ -42,15 +45,25 @@
             </div>
 
             <div class="intro-text">
-                <h1 class="desync">Desynchronised</h1>
-                <h3 class="prod">film producttion.</h3>
+                <h1 class="film">FILM</h1>
+                <h1 class="prod">PRODUCTION</h1>
+                <h3 class="service">at your service.</h3>
             </div>
+
         </header>
 
         <section>
             <h1>Tutvustus</h1>
+
+            <div class="end">
+                <a onclick="backToHome()">
+                    <img src="..\src\imgs\backToTop.png" class="desyncLogo">
+                </a>
+            </div>
+    
         </section>
 
+        
         
 
 
