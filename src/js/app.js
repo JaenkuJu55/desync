@@ -30,5 +30,5 @@ burger.addEventListener('click', () => {
 window.addEventListener("scroll", function() {
     parallaxYles(".film", window.scrollY, 3);
     parallaxAlla(".prod", window.scrollY, 0.7);
-    parallaxParemale(".service", window.scrollY, 3,0.7);
+    parallaxParemale(".service", window.scrollY, 3, 0.7);
 })

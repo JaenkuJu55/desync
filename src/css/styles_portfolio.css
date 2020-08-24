@@ -30,8 +30,7 @@ a {
 header {
   min-height: 120vh;
   position: relative;
-  background: -webkit-gradient(linear, right top, left top, from(#222324), to(#000000));
-  background: linear-gradient(270deg, #222324, #000000);
+  background: #fffff1;
 }
 
 header .intro-text {
@@ -64,21 +63,14 @@ header h1 {
 }
 
 .desyncLogo:hover {
-  -webkit-filter: brightness(70%);
-          filter: brightness(70%);
-}
-
-section {
-  height: 100%;
-  width: 100%;
-  background-color: #fffff1;
-  position: relative;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
 }
 
 .bg-dark {
   border-bottom-style: solid;
   border-width: 1px;
-  border-color: #f0f0ec;
+  border-color: black;
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
@@ -109,7 +101,7 @@ button {
 }
 
 .navbar-dark .nav-item .nav-link {
-  color: #f1f1eb;
+  color: black;
 }
 
 .navbar-dark .navbar-toggler {
@@ -124,6 +116,9 @@ button:focus {
 @media screen and (max-width: 991px) {
   .burger {
     display: block;
+  }
+  .burger div {
+    background-color: black;
   }
   .film {
     font-size: 4rem !important;
@@ -151,37 +146,4 @@ button:focus {
   -webkit-transform: rotate(45deg) translate(-5px, -5px);
           transform: rotate(45deg) translate(-5px, -5px);
 }
-
-.end {
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-}
-
-.end img {
-  padding-top: 10px;
-  width: 420px;
-}
-
-.end img:hover {
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
-}
-
-.row {
-  padding-top: 15rem;
-}
-
-@media screen and (max-width: 767px) {
-  .row {
-    padding-top: 5rem;
-  }
-}
-
-.ollie {
-  width: 100%;
-  margin-bottom: 30px;
-}
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles_portfolio.css.map */
