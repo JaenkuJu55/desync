@@ -17,6 +17,10 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  color: rgba(15, 46, 148, 0.781) !important;
+}
+
 .navBar {
   width: 100%;
   position: relative;
@@ -71,7 +75,7 @@ header h1 {
 section {
   height: 100%;
   width: 100%;
-  background-color: #fffff1;
+  background: #ecebeb;
   position: relative;
 }
 
@@ -152,16 +156,23 @@ button:focus {
           transform: rotate(45deg) translate(-5px, -5px);
 }
 
+.endsection {
+  padding-top: 5rem;
+}
+
+.endsection .steps {
+  padding: 5rem;
+}
+
 .end {
   position: absolute;
-  bottom: 2%;
   left: 50%;
+  bottom: 1%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
 
 .end img {
-  padding-top: 10px;
   width: 420px;
 }
 
@@ -170,13 +181,9 @@ button:focus {
           filter: blur(1px);
 }
 
-.row {
-  padding-top: 15rem;
-}
-
 @media screen and (max-width: 767px) {
   .row {
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 }
 

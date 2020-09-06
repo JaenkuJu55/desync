@@ -17,6 +17,10 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  color: rgba(17, 98, 219, 0.781) !important;
+}
+
 .navBar {
   width: 100%;
   position: relative;

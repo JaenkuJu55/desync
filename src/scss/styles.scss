@@ -14,6 +14,9 @@ body{
 a{
     cursor: pointer;
 }
+a:hover{
+    color:rgba(15, 46, 148, 0.781) !important;
+}
 
 .navBar{
     width: 100%;
@@ -65,7 +68,7 @@ header{
 section{
     height: 100%;
     width: 100%;
-    background-color: rgb(255, 255, 241);
+    background: rgb(236, 235, 235);
     position: relative;
 }
 
@@ -144,26 +147,29 @@ button:focus {
     transform: rotate(45deg) translate(-5px,-5px);
 }
 
+.endsection{
+    padding-top: 5rem;
+    .steps{
+        padding:5rem;
+    }
+}
 .end{
     position: absolute;
-    bottom: 2%;
     left: 50%;
+    bottom:1%;
     transform: translate(-50%);
     img{
-        padding-top: 10px;
         width: 420px;
     }
     img:hover{
         filter: blur(1px);
     }
 }
-.row {
-    padding-top: 15rem;
-}
+
 
 @media screen and (max-width:767px){
     .row{
-        padding-top: 5rem;
+        padding-top: 2rem;
     }
 }
 
