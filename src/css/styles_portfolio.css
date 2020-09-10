@@ -71,13 +71,6 @@ header h1 {
           filter: blur(1px);
 }
 
-.bg-dark {
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: black;
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-
 button {
   border-color: transparent;
 }
@@ -106,6 +99,13 @@ button {
 
 .navbar-dark .nav-item .nav-link {
   color: black;
+}
+
+.bg-dark {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .navbar-dark .navbar-toggler {

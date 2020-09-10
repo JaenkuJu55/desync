@@ -15,9 +15,10 @@ a{
     cursor: pointer;
 }
 a:hover{
-    color:rgba(255, 214, 30, 0.781) !important;
+    color:rgba(241, 184, 76, 0.781) !important;
 }
 
+// Navbar=====
 .navBar{
     width: 100%;
     position: relative;
@@ -25,7 +26,82 @@ a:hover{
     img{
         width: 300px;
     }
+
+    .desyncLogo:hover{
+        filter: brightness(0.6) sepia(1);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition:  0.5s ease-in-out;
+        -ms-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+    .desyncLogo {
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition:  0.5s ease-in-out;
+        -ms-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+    .portfolio{
+        position: relative;
+        left:-350%;
+
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition:  0.5s ease-in-out;
+        -ms-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+    .portfolio:hover{
+        background-color: rgba(255, 214, 30, 0.089);
+        border-radius: 40px;
+        display: inline-block;
+
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition:  0.5s ease-in-out;
+        -ms-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+    .contact{
+        position: relative;
+        right:-320%;
+
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition:  0.5s ease-in-out;
+        -ms-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+    .contact:hover{
+        background-color: rgba(255, 214, 30, 0.089);
+        border-radius: 40px;
+        display: inline-block;
+
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition:  0.5s ease-in-out;
+        -ms-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
 }
+.navbar-brand {
+    top: 0;
+    margin-top: .5rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px !important;  /* 50% of your logo width */
+    z-index: 1;
+}
+
+.bg-dark {
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(240, 240, 236);
+    background-color: rgba(0, 0, 0, 0)!important;
+}
+
+// /Navbar=====
 
 header{
     min-height: 120vh;
@@ -61,9 +137,7 @@ header{
     }
 }
 
-.desyncLogo:hover{
-    filter: brightness(70%);
-}
+
 
 section{
     height: 100%;
@@ -72,12 +146,6 @@ section{
     position: relative;
 }
 
-.bg-dark {
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-color: rgb(240, 240, 236);
-    background-color: rgba(0, 0, 0, 0)!important;
-}
 
 
 
@@ -122,6 +190,8 @@ button:focus {
 }
 @media screen and (max-width:991px){
     .burger{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         display: block;
     }
     .film{
@@ -134,6 +204,21 @@ button:focus {
     }
     .service{
         left:40%!important;
+    }
+    .navbar-dark .nav-item {
+        position: relative;
+        font-family: 'Jura', sans-serif;
+        font-size: 1.5em;
+        left: 50%;
+        margin-left: -72px;
+    }
+    .portfolio{
+        left:0!important;
+        width: 90px;
+    }
+    .contact{
+        left:0!important;
+        width: 90px;
     }
 }
 //Burgeri anim

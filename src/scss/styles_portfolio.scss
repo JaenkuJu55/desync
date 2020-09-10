@@ -66,15 +66,6 @@ header{
     filter: blur(1px);
 }
 
-.bg-dark {
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0)!important;
-}
-
-
-
 button{
     border-color: transparent;
 }
@@ -101,6 +92,13 @@ button{
             color: rgb(0, 0, 0);
         }
     }
+}
+
+.bg-dark {
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0)!important;
 }
 
 
