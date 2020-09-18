@@ -9,6 +9,7 @@ html{
 
 body{
     overflow-x: hidden;
+    height: 100%;
 }
 
 a{
@@ -16,6 +17,10 @@ a{
 }
 a:hover{
     color:rgba(241, 184, 76, 0.781) !important;
+}
+
+p{
+    font-family: 'Jura', sans-serif;
 }
 
 // Navbar=====
@@ -140,10 +145,54 @@ header{
 
 
 section{
-    height: 100%;
-    width: 100%;
-    background: rgb(236, 235, 235);
+    height: 100vh;;
+    background: rgb(0, 0, 0);
     position: relative;
+    .row{
+        padding-top: 150px;
+        p{
+            font-size: 2rem;
+        }
+    }
+}
+.description{
+    height: 110vh;
+    background-image: url(../imgs/production.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.idea{
+    .row{
+        padding-top: 130px;
+    }
+    img{
+        width: 100px;
+        position: relative;
+        left:50%;
+        transform: translate(-50%);
+    }
+    p{
+        font-weight: 100;
+        color:white;
+        text-align: center;
+    }
+
+    .submit{
+        padding-top: 250px;
+        p{
+            text-decoration: underline;
+        }
+        p:hover{
+            color:rgba(241, 184, 76, 0.781);
+            cursor: pointer;
+        }
+    }
+    .submit-form{
+        position: absolute;
+
+    }
 }
 
 
@@ -220,6 +269,9 @@ button:focus {
         left:0!important;
         width: 90px;
     }
+    .row{
+        padding-bottom: 0px;
+    }
 }
 //Burgeri anim
 .toggle .line1{
@@ -232,12 +284,6 @@ button:focus {
     transform: rotate(45deg) translate(-5px,-5px);
 }
 
-.endsection{
-    padding-top: 5rem;
-    .steps{
-        padding:5rem;
-    }
-}
 .end{
     position: absolute;
     left: 50%;
@@ -256,12 +302,6 @@ button:focus {
     .row{
         padding-top: 2rem;
     }
-}
-
-
-.ollie{
-    width: 100%;
-    margin-bottom: 30px;
 }
 
 

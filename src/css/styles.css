@@ -11,6 +11,7 @@ html {
 
 body {
   overflow-x: hidden;
+  height: 100%;
 }
 
 a {
@@ -19,6 +20,10 @@ a {
 
 a:hover {
   color: rgba(241, 184, 76, 0.781) !important;
+}
+
+p {
+  font-family: 'Jura', sans-serif;
 }
 
 .navBar {
@@ -127,10 +132,60 @@ header h1 {
 }
 
 section {
-  height: 100%;
-  width: 100%;
-  background: #ecebeb;
+  height: 100vh;
+  background: black;
   position: relative;
+}
+
+section .row {
+  padding-top: 150px;
+}
+
+section .row p {
+  font-size: 2rem;
+}
+
+.description {
+  height: 110vh;
+  background-image: url(../imgs/production.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.idea .row {
+  padding-top: 130px;
+}
+
+.idea img {
+  width: 100px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.idea p {
+  font-weight: 100;
+  color: white;
+  text-align: center;
+}
+
+.idea .submit {
+  padding-top: 250px;
+}
+
+.idea .submit p {
+  text-decoration: underline;
+}
+
+.idea .submit p:hover {
+  color: rgba(241, 184, 76, 0.781);
+  cursor: pointer;
+}
+
+.idea .submit-form {
+  position: absolute;
 }
 
 button {
@@ -204,6 +259,9 @@ button:focus {
     left: 0 !important;
     width: 90px;
   }
+  .row {
+    padding-bottom: 0px;
+  }
 }
 
 .toggle .line1 {
@@ -218,14 +276,6 @@ button:focus {
 .toggle .line3 {
   -webkit-transform: rotate(45deg) translate(-5px, -5px);
           transform: rotate(45deg) translate(-5px, -5px);
-}
-
-.endsection {
-  padding-top: 5rem;
-}
-
-.endsection .steps {
-  padding: 5rem;
 }
 
 .end {
@@ -249,10 +299,5 @@ button:focus {
   .row {
     padding-top: 2rem;
   }
-}
-
-.ollie {
-  width: 100%;
-  margin-bottom: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
