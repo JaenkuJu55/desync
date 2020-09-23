@@ -32,3 +32,18 @@ window.addEventListener("scroll", function() {
     parallaxAlla(".prod", window.scrollY, 0.7);
     parallaxParemale(".service", window.scrollY, 3, 0.7);
 })
+
+const submitSlide = () =>{
+    const submitBtn = document.querySelector('.submitBtn');
+    const submitForm = document.querySelector('.submit-form');
+    const exit = document.querySelector('.exit');
+
+    submitBtn.addEventListener('click', ()=>{
+        submitForm.classList.toggle('submit-form-active');
+    })
+    exit.addEventListener('click', ()=>{
+        submitForm.classList.toggle('submit-form-active');
+    })
+}
+
+submitSlide();

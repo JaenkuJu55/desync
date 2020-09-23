@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 body {
@@ -132,7 +133,7 @@ header h1 {
 }
 
 section {
-  height: 100vh;
+  height: 1000px;
   background: black;
   position: relative;
 }
@@ -146,15 +147,16 @@ section .row p {
 }
 
 .description {
-  height: 110vh;
-  background-image: url(../imgs/production.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
+  height: 1100px;
+  background-color: #feffee;
+}
+
+.idea {
+  z-index: 0;
 }
 
 .idea .row {
-  padding-top: 130px;
+  padding-top: 150px;
 }
 
 .idea img {
@@ -171,12 +173,9 @@ section .row p {
   text-align: center;
 }
 
-.idea .submit {
-  padding-top: 250px;
-}
-
 .idea .submit p {
-  text-decoration: underline;
+  text-align: center;
+  font-size: 5rem;
 }
 
 .idea .submit p:hover {
@@ -186,6 +185,56 @@ section .row p {
 
 .idea .submit-form {
   position: absolute;
+  z-index: 40;
+  left: 50%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  background-color: #d6a343;
+  height: 1000px;
+  width: 100vw;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+.idea .submit-form .exit {
+  position: relative;
+  background-color: transparent;
+  display: inline-block;
+  left: 50px;
+  top: 50px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.idea .submit-form .exit div {
+  width: 40px;
+  height: 2px;
+  margin: 5px;
+  background-color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.idea .submit-form .exit .line1 {
+  -webkit-transform: rotate(-45deg) translate(-2px, 0px);
+          transform: rotate(-45deg) translate(-2px, 0px);
+}
+
+.idea .submit-form .exit .line2 {
+  -webkit-transform: rotate(45deg) translate(-5px, -3px);
+          transform: rotate(45deg) translate(-5px, -3px);
+}
+
+.idea .submit-form .exit:hover div {
+  background-color: #8d6c2e;
+}
+
+.idea .submit-form-active {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 button {
@@ -261,6 +310,12 @@ button:focus {
   }
   .row {
     padding-bottom: 0px;
+  }
+  section .row p {
+    font-size: 1.5rem;
+  }
+  .idea .submit p {
+    font-size: 3rem;
   }
 }
 

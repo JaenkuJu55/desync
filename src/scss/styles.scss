@@ -5,6 +5,7 @@
 }
 html{
     scroll-behavior: smooth;
+    min-height: 100%;
 }
 
 body{
@@ -128,7 +129,6 @@ header{
             top: 48%;
             left: 39%;
 
-
         }
         .service{
             position: absolute;
@@ -145,7 +145,7 @@ header{
 
 
 section{
-    height: 100vh;;
+    height: 1000px;
     background: rgb(0, 0, 0);
     position: relative;
     .row{
@@ -156,16 +156,14 @@ section{
     }
 }
 .description{
-    height: 110vh;
-    background-image: url(../imgs/production.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
+    height: 1100px;
+    background-color: rgb(254, 255, 238);
 }
 
 .idea{
+    z-index: 0;
     .row{
-        padding-top: 130px;
+        padding-top:150px;
     }
     img{
         width: 100px;
@@ -180,9 +178,9 @@ section{
     }
 
     .submit{
-        padding-top: 250px;
         p{
-            text-decoration: underline;
+            text-align: center;
+            font-size: 5rem;
         }
         p:hover{
             color:rgba(241, 184, 76, 0.781);
@@ -191,7 +189,56 @@ section{
     }
     .submit-form{
         position: absolute;
+        z-index: 40;
+        left: 50%;
+        transform: translateX(100%);
+        background-color: rgb(214, 163, 67);
+        height: 1000px;
+        width: 100vw;
 
+        -webkit-transition: 0.5s ease-in;
+        -moz-transition:  0.5s ease-in;
+        -ms-transition: 0.5s ease-in;
+        -o-transition: 0.5s ease-in;
+        transition: 0.5s ease-in;
+        .exit{
+            position: relative;
+            background-color: transparent;
+            display: inline-block;
+            left:50px;
+            top:50px;
+            padding-top:10px;
+            padding-bottom: 8px;
+            cursor: pointer;
+            div{
+                width: 40px;
+                height: 2px;
+                margin:5px;
+                background-color: rgb(255, 255, 255);
+                transition: all 0.3s ease;
+            }
+            .line1{
+                transform: rotate(-45deg) translate(-2px,0px);
+            }
+            .line2{
+                transform: rotate(45deg) translate(-5px,-3px);
+            }
+        }
+        .exit:hover{
+            div{
+                background-color:rgb(141, 108, 46);
+            }
+        }
+    }
+
+    .submit-form-active{
+        transform: translateX(-50%);
+
+        -webkit-transition: 0.5s ease;
+        -moz-transition:  0.5s ease;
+        -ms-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        transition: 0.5s ease;
     }
 }
 
@@ -272,6 +319,22 @@ button:focus {
     .row{
         padding-bottom: 0px;
     }
+
+    section{
+        .row{
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .idea{
+        .submit{
+            p{
+                font-size: 3rem;
+            }
+        }
+    }
+    
 }
 //Burgeri anim
 .toggle .line1{
