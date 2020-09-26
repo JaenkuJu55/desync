@@ -7,12 +7,13 @@
 
 html {
   scroll-behavior: smooth;
-  min-height: 100%;
+  height: -webkit-fill-available;
 }
 
 body {
   overflow-x: hidden;
-  height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 a {
@@ -21,6 +22,10 @@ a {
 
 a:hover {
   color: rgba(241, 184, 76, 0.781) !important;
+}
+
+h1, h2, h3 {
+  font-family: 'Jura', sans-serif;
 }
 
 p {
@@ -97,7 +102,7 @@ p {
 }
 
 header {
-  min-height: 120vh;
+  height: 120vh;
   position: relative;
   background: -webkit-gradient(linear, right top, left top, from(#222324), to(#000000));
   background: linear-gradient(270deg, #222324, #000000);
@@ -133,13 +138,12 @@ header h1 {
 }
 
 section {
-  height: 1000px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  min-height: 300px;
   background: black;
   position: relative;
-}
-
-section .row {
-  padding-top: 150px;
 }
 
 section .row p {
@@ -147,35 +151,75 @@ section .row p {
 }
 
 .description {
-  height: 1100px;
+  height: 100vh;
+  min-height: 500px;
   background-color: #feffee;
+}
+
+.description #leftSVG {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 2px;
+  height: 100vh;
+  min-height: 496px;
+}
+
+.description #rightSVG {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  height: 100vh;
+  min-height: 496px;
 }
 
 .idea {
   z-index: 0;
+  min-height: 500px;
 }
 
-.idea .row {
-  padding-top: 150px;
-}
-
-.idea img {
+.idea .bulb {
   width: 100px;
-  position: relative;
+  position: absolute;
+  top: 5%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
 
+.idea .ifyou {
+  position: relative;
+  top: 40%;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .idea p {
+  display: inline;
   font-weight: 100;
   color: white;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.idea .submit {
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .idea .submit p {
-  text-align: center;
-  font-size: 5rem;
+  font-size: 8vmin;
 }
 
 .idea .submit p:hover {
@@ -190,10 +234,31 @@ section .row p {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   background-color: #d6a343;
-  height: 1000px;
+  height: 100vh;
+  min-height: 400px;
   width: 100vw;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
+}
+
+.idea .submit-form img {
+  position: absolute;
+  width: 100px;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.idea .submit-form .submit-form-content {
+  position: relative;
+  top: 30%;
+  width: 80vw;
+  margin: auto;
+}
+
+.idea .submit-form .submit-form-content h3, .idea .submit-form .submit-form-content h1 {
+  text-align: center;
 }
 
 .idea .submit-form .exit {
@@ -211,7 +276,7 @@ section .row p {
   width: 40px;
   height: 2px;
   margin: 5px;
-  background-color: white;
+  background-color: black;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -227,7 +292,7 @@ section .row p {
 }
 
 .idea .submit-form .exit:hover div {
-  background-color: #8d6c2e;
+  background-color: #f0e4ce;
 }
 
 .idea .submit-form-active {
@@ -312,10 +377,16 @@ button:focus {
     padding-bottom: 0px;
   }
   section .row p {
-    font-size: 1.5rem;
+    font-size: 6vmin;
   }
-  .idea .submit p {
-    font-size: 3rem;
+  .idea .submit-form img {
+    width: 10vw;
+  }
+  .idea .submit-form .submit-form-content h3 {
+    font-size: 5vmin;
+  }
+  .idea .submit-form .submit-form-content h1 {
+    font-size: 7vmin;
   }
 }
 
