@@ -147,13 +147,50 @@ section {
 }
 
 section .row p {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .description {
   height: 100vh;
   min-height: 500px;
   background-color: #feffee;
+}
+
+.description .description-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 65vw;
+  margin: auto;
+}
+
+.description .description-content p {
+  text-align: center;
+}
+
+.description .description-content .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10%;
+}
+
+.description .description-content .images #vid {
+  margin: auto;
+  height: 3.5vw;
+  min-height: 60px;
+}
+
+.description .description-content .images img {
+  margin: auto;
+  height: 5vw;
+  min-height: 80px;
 }
 
 .description #leftSVG {
@@ -178,7 +215,7 @@ section .row p {
 
 .idea {
   z-index: 0;
-  min-height: 500px;
+  min-height: 700px;
 }
 
 .idea .bulb {
@@ -235,7 +272,7 @@ section .row p {
           transform: translateX(100%);
   background-color: #d6a343;
   height: 100vh;
-  min-height: 400px;
+  min-height: 700px;
   width: 100vw;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;

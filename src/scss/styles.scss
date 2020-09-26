@@ -156,7 +156,7 @@ section{
     position: relative;
     .row{
         p{
-            font-size: 2rem;
+            font-size: 3rem;
         }
     }
 }
@@ -164,6 +164,32 @@ section{
     height: 100vh;
     min-height: 500px;
     background-color: rgb(254, 255, 238);
+    .description-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 65vw;
+        margin: auto;
+        p{
+            text-align: center;
+        }
+        .images{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10%;
+            #vid{
+                margin: auto;
+                height: 3.5vw;
+                min-height: 60px;
+            }
+            img{
+                margin: auto;
+                height: 5vw;
+                min-height: 80px;
+            }
+        }
+    }
     #leftSVG{
         position: absolute;
         top: 50%;
@@ -185,7 +211,7 @@ section{
 
 .idea{
     z-index: 0;
-    min-height: 500px;
+    min-height: 700px;
     .bulb{
         width: 100px;
         position: absolute;
@@ -233,7 +259,7 @@ section{
         transform: translateX(100%);
         background-color: rgb(214, 163, 67);
         height: 100vh;
-        min-height: 400px;
+        min-height: 700px;
         width: 100vw;
 
         -webkit-transition: 0.5s ease-in;
