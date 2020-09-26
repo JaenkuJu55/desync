@@ -213,6 +213,10 @@ section .row p {
   min-height: 496px;
 }
 
+.kaunistus path:nth-child(2) {
+  stroke-dasharray: 30;
+}
+
 .idea {
   z-index: 0;
   min-height: 700px;

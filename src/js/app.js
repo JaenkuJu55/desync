@@ -46,4 +46,12 @@ const submitSlide = () =>{
     })
 }
 
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".idea", {
+    scrollTrigger: ".idea",
+    opacity: 0.5,
+    duration: 2,
+});
+
 submitSlide();
