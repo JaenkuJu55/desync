@@ -45,43 +45,39 @@ p {
 .navBar .desyncLogo:hover {
   -webkit-filter: brightness(0.6) sepia(1);
           filter: brightness(0.6) sepia(1);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .navBar .desyncLogo {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .navBar .portfolio {
   position: relative;
   left: -350%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .navBar .portfolio:hover {
-  background-color: rgba(255, 214, 30, 0.089);
-  border-radius: 40px;
   display: inline-block;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .navBar .contact {
   position: relative;
   right: -320%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .navBar .contact:hover {
-  background-color: rgba(255, 214, 30, 0.089);
-  border-radius: 40px;
   display: inline-block;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .navbar-brand {
@@ -193,6 +189,181 @@ section .row p {
   min-height: 80px;
 }
 
+.description .kaunistus path:nth-child(2) {
+  stroke-dasharray: 1087;
+  stroke-dashoffset: 1087;
+}
+
+.description .kaunistus path:nth-child(3) {
+  stroke-dasharray: 955;
+  stroke-dashoffset: 955;
+}
+
+.description .kaunistus path:nth-child(4) {
+  stroke-dasharray: 941;
+  stroke-dashoffset: 941;
+}
+
+.description .kaunistus path:nth-child(5) {
+  stroke-dasharray: 711;
+  stroke-dashoffset: 711;
+}
+
+.description .kaunistus path:nth-child(6) {
+  stroke-dasharray: 1180;
+  stroke-dashoffset: 1180;
+}
+
+.description .kaunistus path:nth-child(7) {
+  stroke-dasharray: 1013;
+  stroke-dashoffset: 1013;
+}
+
+.description .kaunistus path:nth-child(8) {
+  stroke-dasharray: 1054;
+  stroke-dashoffset: 1054;
+}
+
+.description .kaunistus path:nth-child(9) {
+  stroke-dasharray: 1051;
+  stroke-dashoffset: 1051;
+}
+
+.description .kaunistus path:nth-child(10) {
+  stroke-dasharray: 1151;
+  stroke-dashoffset: 1151;
+}
+
+.description .kaunistus path:nth-child(11) {
+  stroke-dasharray: 1180;
+  stroke-dashoffset: 1180;
+}
+
+.description .kaunistus path:nth-child(12) {
+  stroke-dasharray: 455;
+  stroke-dashoffset: 455;
+}
+
+.description .kaunistus path:nth-child(13) {
+  stroke-dasharray: 941;
+  stroke-dashoffset: 941;
+}
+
+.description .kaunistus path:nth-child(14) {
+  stroke-dasharray: 957;
+  stroke-dashoffset: 957;
+}
+
+.description .kaunistus path:nth-child(15) {
+  stroke-dasharray: 1087;
+  stroke-dashoffset: 1087;
+  -webkit-transition: 6s ease-out;
+  -webkit-transition: 6s ease-in;
+  transition: 6s ease-in;
+}
+
+.description .kaunistus.active path:nth-child(2) {
+  stroke-dasharray: 1087;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-out;
+  -webkit-transition: 6s ease-in;
+  transition: 6s ease-in;
+}
+
+.description .kaunistus.active path:nth-child(3) {
+  stroke-dasharray: 955;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-out;
+  transition: 6s ease-out;
+}
+
+.description .kaunistus.active path:nth-child(4) {
+  stroke-dasharray: 941;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-out;
+  transition: 6s ease-out;
+}
+
+.description .kaunistus.active path:nth-child(5) {
+  stroke-dasharray: 711;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-out;
+  transition: 6s ease-out;
+}
+
+.description .kaunistus.active path:nth-child(6) {
+  stroke-dasharray: 1180;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-out;
+  transition: 6s ease-out;
+}
+
+.description .kaunistus.active path:nth-child(7) {
+  stroke-dasharray: 1013;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-out;
+  transition: 6s ease-out;
+}
+
+.description .kaunistus.active path:nth-child(8) {
+  stroke-dasharray: 1054;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-in;
+  transition: 6s ease-in;
+}
+
+.description .kaunistus.active path:nth-child(9) {
+  stroke-dasharray: 1051;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-out;
+  transition: 6s ease-out;
+}
+
+.description .kaunistus.active path:nth-child(10) {
+  stroke-dasharray: 1151;
+  stroke-dashoffset: 0;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+  -webkit-transition: 6s ease-out;
+  -webkit-transition: 2s ease-out;
+  transition: 2s ease-out;
+}
+
+.description .kaunistus.active path:nth-child(11) {
+  stroke-dasharray: 1180;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-in;
+  transition: 6s ease-in;
+}
+
+.description .kaunistus.active path:nth-child(12) {
+  stroke-dasharray: 455;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-out;
+  transition: 6s ease-out;
+}
+
+.description .kaunistus.active path:nth-child(13) {
+  stroke-dasharray: 941;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-out;
+  transition: 6s ease-out;
+}
+
+.description .kaunistus.active path:nth-child(14) {
+  stroke-dasharray: 957;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-out;
+  transition: 6s ease-out;
+}
+
+.description .kaunistus.active path:nth-child(15) {
+  stroke-dasharray: 1087;
+  stroke-dashoffset: 0;
+  -webkit-transition: 6s ease-out;
+  transition: 6s ease-out;
+}
+
 .description #leftSVG {
   position: absolute;
   top: 50%;
@@ -213,13 +384,10 @@ section .row p {
   min-height: 496px;
 }
 
-.kaunistus path:nth-child(2) {
-  stroke-dasharray: 30;
-}
-
 .idea {
   z-index: 0;
   min-height: 700px;
+  overflow: hidden;
 }
 
 .idea .bulb {
@@ -261,11 +429,15 @@ section .row p {
 
 .idea .submit p {
   font-size: 8vmin;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .idea .submit p:hover {
   color: rgba(241, 184, 76, 0.781);
   cursor: pointer;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .idea .submit-form {
@@ -278,8 +450,8 @@ section .row p {
   height: 100vh;
   min-height: 700px;
   width: 100vw;
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
+  -webkit-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
 }
 
 .idea .submit-form img {
@@ -318,8 +490,8 @@ section .row p {
   height: 2px;
   margin: 5px;
   background-color: black;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .idea .submit-form .exit .line1 {
@@ -339,8 +511,8 @@ section .row p {
 .idea .submit-form-active {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 button {
@@ -357,8 +529,8 @@ button {
   height: 2px;
   margin: 5px;
   background-color: rgba(255, 255, 255, 0.678);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .navbar-dark .nav-item {

@@ -39,60 +39,56 @@ p{
 
     .desyncLogo:hover{
         filter: brightness(0.6) sepia(1);
-        -webkit-transition: 0.5s ease-in-out;
-        -moz-transition:  0.5s ease-in-out;
-        -ms-transition: 0.5s ease-in-out;
-        -o-transition: 0.5s ease-in-out;
-        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.6s ease-in-out;
+        -moz-transition:  0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
+        -o-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
     }
     .desyncLogo {
-        -webkit-transition: 0.5s ease-in-out;
-        -moz-transition:  0.5s ease-in-out;
-        -ms-transition: 0.5s ease-in-out;
-        -o-transition: 0.5s ease-in-out;
-        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.6s ease-in-out;
+        -moz-transition:  0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
+        -o-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
     }
     .portfolio{
         position: relative;
         left:-350%;
 
-        -webkit-transition: 0.5s ease-in-out;
-        -moz-transition:  0.5s ease-in-out;
-        -ms-transition: 0.5s ease-in-out;
-        -o-transition: 0.5s ease-in-out;
-        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.6s ease-in-out;
+        -moz-transition:  0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
+        -o-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
     }
     .portfolio:hover{
-        background-color: rgba(255, 214, 30, 0.089);
-        border-radius: 40px;
         display: inline-block;
 
-        -webkit-transition: 0.5s ease-in-out;
-        -moz-transition:  0.5s ease-in-out;
-        -ms-transition: 0.5s ease-in-out;
-        -o-transition: 0.5s ease-in-out;
-        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.6s ease-in-out;
+        -moz-transition:  0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
+        -o-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
     }
     .contact{
         position: relative;
         right:-320%;
 
-        -webkit-transition: 0.5s ease-in-out;
-        -moz-transition:  0.5s ease-in-out;
-        -ms-transition: 0.5s ease-in-out;
-        -o-transition: 0.5s ease-in-out;
-        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.6s ease-in-out;
+        -moz-transition:  0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
+        -o-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
     }
     .contact:hover{
-        background-color: rgba(255, 214, 30, 0.089);
-        border-radius: 40px;
         display: inline-block;
 
-        -webkit-transition: 0.5s ease-in-out;
-        -moz-transition:  0.5s ease-in-out;
-        -ms-transition: 0.5s ease-in-out;
-        -o-transition: 0.5s ease-in-out;
-        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.6s ease-in-out;
+        -moz-transition:  0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
+        -o-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
     }
 }
 .navbar-brand {
@@ -190,8 +186,202 @@ section{
             }
         }
     }
+
     .kaunistus{
+        path:nth-child(2){
+            stroke-dasharray: 1087;
+            stroke-dashoffset: 1087;
+        }
+        path:nth-child(3){
+            stroke-dasharray: 955;
+            stroke-dashoffset: 955;
+        }
+        path:nth-child(4){
+            stroke-dasharray: 941;
+            stroke-dashoffset: 941;
+        }
+        path:nth-child(5){
+            stroke-dasharray: 711;
+            stroke-dashoffset: 711;
+        }
+        path:nth-child(6){
+            stroke-dasharray: 1180;
+            stroke-dashoffset: 1180;
+        }
+        path:nth-child(7){
+            stroke-dasharray: 1013;
+            stroke-dashoffset: 1013;
+        }
+        path:nth-child(8){
+            stroke-dasharray: 1054;
+            stroke-dashoffset: 1054;
+        }
+        path:nth-child(9){
+            stroke-dasharray: 1051;
+            stroke-dashoffset: 1051;
+        }
+        path:nth-child(10){
+            stroke-dasharray: 1151;
+            stroke-dashoffset: 1151;
+        }
+        path:nth-child(11){
+            stroke-dasharray: 1180;
+            stroke-dashoffset: 1180;
+        }
+        path:nth-child(12){
+            stroke-dasharray: 455;
+            stroke-dashoffset: 455;
+        }
+        path:nth-child(13){
+            stroke-dasharray: 941;
+            stroke-dashoffset: 941;
+        }
+        path:nth-child(14){
+            stroke-dasharray: 957;
+            stroke-dashoffset: 957;
+            
+        }
+        path:nth-child(15){
+            stroke-dasharray: 1087;
+            stroke-dashoffset: 1087;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-in;
+        }
     }
+
+    .kaunistus.active{
+        path:nth-child(2){
+            stroke-dasharray: 1087;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-in;
+        }
+        path:nth-child(3){
+            stroke-dasharray: 955;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-out;
+        }
+        path:nth-child(4){
+            stroke-dasharray: 941;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-out;
+        }
+        path:nth-child(5){
+            stroke-dasharray: 711;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-out;
+        }
+        path:nth-child(6){
+            stroke-dasharray: 1180;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-out;
+        }
+        path:nth-child(7){
+            stroke-dasharray: 1013;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-out;
+        }
+        path:nth-child(8){
+            stroke-dasharray: 1054;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-in;
+            -moz-transition:  6s ease-in;
+            -ms-transition: 6s ease-in;
+            -o-transition: 6s ease-in;
+            transition: 6s ease-in;
+        }
+        path:nth-child(9){
+            stroke-dasharray: 1051;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-out;
+        }
+        path:nth-child(10){
+            stroke-dasharray: 1151;
+            stroke-dashoffset: 0;
+            transition-delay: 2s;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 2s ease-out;
+        }
+        path:nth-child(11){
+            stroke-dasharray: 1180;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-in;
+            -moz-transition:  6s ease-in;
+            -ms-transition: 6s ease-in;
+            -o-transition: 6s ease-in;
+            transition: 6s ease-in;
+        }
+        path:nth-child(12){
+            stroke-dasharray: 455;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-out;
+        }
+        path:nth-child(13){
+            stroke-dasharray: 941;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-out;
+        }
+        path:nth-child(14){
+            stroke-dasharray: 957;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-out;
+        }
+        path:nth-child(15){
+            stroke-dasharray: 1087;
+            stroke-dashoffset: 0;
+            -webkit-transition: 6s ease-out;
+            -moz-transition:  6s ease-out;
+            -ms-transition: 6s ease-out;
+            -o-transition: 6s ease-out;
+            transition: 6s ease-out;
+        }
+    }
+
     #leftSVG{
         position: absolute;
         top: 50%;
@@ -210,14 +400,13 @@ section{
     }
 }
 
-.kaunistus path:nth-child(2){
-    stroke-dasharray: 30;
-}
+
 
 
 .idea{
     z-index: 0;
     min-height: 700px;
+    overflow: hidden;
     .bulb{
         width: 100px;
         position: absolute;
@@ -250,12 +439,21 @@ section{
         margin-left: auto;
         margin-right: auto;
         p{
-            //font-size:calc(12px + 1.5vw);
             font-size: 8vmin;
+            -webkit-transition: 0.5s ease-out;
+            -moz-transition:  0.5s ease-out;
+            -ms-transition: 0.5s ease-out;
+            -o-transition: 0.5s ease-out;
+            transition: 0.5s ease-out;
         }
         p:hover{
             color:rgba(241, 184, 76, 0.781);
             cursor: pointer;
+            -webkit-transition: 0.5s ease-out;
+            -moz-transition:  0.5s ease-out;
+            -ms-transition: 0.5s ease-out;
+            -o-transition: 0.5s ease-out;
+            transition: 0.5s ease-out;
         }
     }
     .submit-form{
@@ -268,11 +466,11 @@ section{
         min-height: 700px;
         width: 100vw;
 
-        -webkit-transition: 0.5s ease-in;
-        -moz-transition:  0.5s ease-in;
-        -ms-transition: 0.5s ease-in;
-        -o-transition: 0.5s ease-in;
-        transition: 0.5s ease-in;
+        -webkit-transition: 0.6s ease-in;
+        -moz-transition:  0.6s ease-in;
+        -ms-transition: 0.6s ease-in;
+        -o-transition: 0.6s ease-in;
+        transition: 0.6s ease-in;
 
         img{
             position: absolute;
@@ -305,7 +503,7 @@ section{
                 height: 2px;
                 margin:5px;
                 background-color: rgb(0, 0, 0);
-                transition: all 0.3s ease;
+                transition: all 0.6s ease;
             }
             .line1{
                 transform: rotate(-45deg) translate(-2px,0px);
@@ -324,11 +522,11 @@ section{
     .submit-form-active{
         transform: translateX(-50%);
 
-        -webkit-transition: 0.5s ease;
-        -moz-transition:  0.5s ease;
-        -ms-transition: 0.5s ease;
-        -o-transition: 0.5s ease;
-        transition: 0.5s ease;
+        -webkit-transition: 0.6s ease;
+        -moz-transition:  0.6s ease;
+        -ms-transition: 0.6s ease;
+        -o-transition: 0.6s ease;
+        transition: 0.6s ease;
     }
 }
 
@@ -346,7 +544,7 @@ button{
         height: 2px;
         margin:5px;
         background-color: rgba(255, 255, 255, 0.678);
-        transition: all 0.3s ease;
+        transition: all 0.6s ease;
     }
 }
 //Navi riba about,contact jne
