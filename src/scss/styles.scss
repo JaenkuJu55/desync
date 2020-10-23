@@ -28,6 +28,27 @@ p{
     font-family: 'Jura', sans-serif;
 }
 
+//preload
+.preload{
+    width: 100vw;
+    height: 300vh;
+    position: absolute;
+    top: 0%;
+    z-index: 3;
+    opacity: 0%;
+    -webkit-transition: 1s ease-out;
+    -moz-transition:  1s ease-out;
+    -ms-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+    transition: 1s ease-out;
+
+}
+.preload.fade{
+    background-color: black;
+    opacity: 1;
+    z-index: 3;
+}
+
 // Navbar=====
 .navBar{
     width: 100%;
@@ -112,7 +133,11 @@ p{
 header{
     height: 120vh;
     position: relative;
-    background: linear-gradient(270deg, #222324, #000000);
+    //linear-gradient(270deg, #222324, #000000) 
+    background: url(../imgs/filmstrip1.png), #201f20;
+    background-size:70px;
+    background-repeat: repeat;
+    background-position: 0% 0%;
     .intro-text{
         font-family: 'Jura', sans-serif;
         font-size: 80px;
@@ -139,6 +164,37 @@ header{
     }
     h1{
         font-size: 5.5rem;
+    }
+}
+
+// Contact + Porftolio header:
+
+.contactHeader{
+    background: none;
+    background-color: rgb(254, 255, 238);
+    
+    .bg-dark {
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: #00000070;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .navbar-dark .nav-item .nav-link {
+        color: #000000;
+    }
+
+    .burger div{
+        background-color: rgba(0, 0, 0, 0.815);
+    }
+    .desyncLogo:hover{
+        filter: invert(70%) sepia(1) saturate(130%);
+        -webkit-transition: 0.6s ease-in-out;
+        -moz-transition:  0.6s ease-in-out;
+        -ms-transition: 0.6s ease-in-out;
+        -o-transition: 0.6s ease-in-out;
+        transition: 0.6s ease-in-out;
     }
 }
 
@@ -671,6 +727,29 @@ button:focus {
 
 
 
-// ========================================PORTFOLIO========================================
+// ========================================ABOUT========================================
 
+header{
+    height: 110vh;
+    min-height: 700px;
+    .intro{
+        display: flex;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        h2{
+            font-size: 4em;
+        }
+    }
+}
 
+.story{
+    background-color: rgb(254, 255, 238);
+    height: 3000px;
+    .line{
+        position: relative;
+        left: 100px;
+    }
+}

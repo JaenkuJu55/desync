@@ -1,3 +1,11 @@
+$( document ).ready(function(){
+    $(".preload").removeClass("fade");
+    $('.preload').delay(1000).queue(function (next) { 
+    $(this).hide(); 
+    next(); 
+  });
+})
+
 function parallaxAlla(element, distance, speed) {
     const item = document.querySelector(element);
     item.style.transform = `translateY(${distance * speed}px)`;
@@ -18,13 +26,6 @@ function parallaxParemale(element, distance, speed, sync) {
 function backToHome() {
     window.scrollTo(0,0);
 }
-
-const burger = document.querySelector('.burger');
-burger.addEventListener('click', () => {
-    //Burgeri anim.
-    burger.classList.toggle('toggle');
-});
-
 
 
 window.addEventListener("scroll", function() {
@@ -54,7 +55,6 @@ const submitSlide = () =>{
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to
 
 //svg line anim
 ScrollTrigger.create({
@@ -86,6 +86,17 @@ gsap.to(".description",{
     },
 });
 
+//parallax pattern
+gsap.to(".intro",{
+    scrollTrigger:{
+        trigger: ".intro",
+        start:"top",
+        end: "bottom",
+        scrub:1.5,
+    },
+    "background-position":"2% 20%"
+})
+
 
 //section animations
 let t1 = gsap.timeline({
@@ -103,7 +114,7 @@ t1.from("#fromshort", {y:200, opacity:0, duration: 0.5})
 let t2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".ifyou",
-        start: "50% 50%",
+        start: "0% 50%",
     }
 })
 

@@ -32,6 +32,23 @@ p {
   font-family: 'Jura', sans-serif;
 }
 
+.preload {
+  width: 100vw;
+  height: 300vh;
+  position: absolute;
+  top: 0%;
+  z-index: 3;
+  opacity: 0%;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+.preload.fade {
+  background-color: black;
+  opacity: 1;
+  z-index: 3;
+}
+
 .navBar {
   width: 100%;
   position: relative;
@@ -100,8 +117,10 @@ p {
 header {
   height: 120vh;
   position: relative;
-  background: -webkit-gradient(linear, right top, left top, from(#222324), to(#000000));
-  background: linear-gradient(270deg, #222324, #000000);
+  background: url(../imgs/filmstrip1.png), #201f20;
+  background-size: 70px;
+  background-repeat: repeat;
+  background-position: 0% 0%;
 }
 
 header .intro-text {
@@ -131,6 +150,35 @@ header .intro-text .service {
 
 header h1 {
   font-size: 5.5rem;
+}
+
+.contactHeader {
+  background: none;
+  background-color: #feffee;
+}
+
+.contactHeader .bg-dark {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #00000070;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.contactHeader .navbar-dark .nav-item .nav-link {
+  color: #000000;
+}
+
+.contactHeader .burger div {
+  background-color: rgba(0, 0, 0, 0.815);
+}
+
+.contactHeader .desyncLogo:hover {
+  -webkit-filter: invert(70%) sepia(1) saturate(130%);
+          filter: invert(70%) sepia(1) saturate(130%);
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 section {
@@ -638,5 +686,36 @@ button:focus {
   .row {
     padding-top: 2rem;
   }
+}
+
+header {
+  height: 110vh;
+  min-height: 700px;
+}
+
+header .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+header .intro h2 {
+  font-size: 4em;
+}
+
+.story {
+  background-color: #feffee;
+  height: 3000px;
+}
+
+.story .line {
+  position: relative;
+  left: 100px;
 }
 /*# sourceMappingURL=styles.css.map */
