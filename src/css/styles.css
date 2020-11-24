@@ -47,6 +47,7 @@ p {
   background-color: black;
   opacity: 1;
   z-index: 3;
+  height: 100%;
 }
 
 .navBar {
@@ -711,11 +712,83 @@ header .intro h2 {
 
 .story {
   background-color: #feffee;
-  height: 3000px;
+  height: 100%;
 }
 
 .story .line {
   position: relative;
   left: 100px;
+}
+
+.story .story-text h3 {
+  font-size: 2.5rem;
+}
+
+.story #partOne {
+  position: absolute;
+  top: -60px;
+  left: 250px;
+  width: 60%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.story #partTwo {
+  position: absolute;
+  top: 1050px;
+  left: 250px;
+  width: 60%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.story #partThree {
+  position: absolute;
+  top: 230px;
+  left: 250px;
+  width: 60%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+@media screen and (max-width: 991px) {
+  .story .line {
+    left: 30px;
+  }
+  .story-text {
+    left: 150px !important;
+  }
+}
+
+.point1 {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 60px 60px;
+          transform-origin: 60px 60px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.point2 {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 60px 1195px;
+          transform-origin: 60px 1195px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.point3 {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 60px 2460px;
+          transform-origin: 60px 2460px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+footer {
+  height: 40vh;
+  background-color: #feffee;
 }
 /*# sourceMappingURL=styles.css.map */
