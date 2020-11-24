@@ -47,6 +47,7 @@ p{
     background-color: black;
     opacity: 1;
     z-index: 3;
+    height: 100%;
 }
 
 // Navbar=====
@@ -747,9 +748,65 @@ header{
 
 .story{
     background-color: rgb(254, 255, 238);
-    height: 3000px;
+    height: 100%;
     .line{
         position: relative;
         left: 100px;
     }
+    .story-text{
+        h3{
+            font-size: 2.5rem;
+        }
+    }
+    #partOne{
+        position: absolute;
+        top: -60px;
+        left: 250px;
+        width: 60%;
+        transform: translateY(50%);
+    }
+    #partTwo{
+        position: absolute;
+        top: 1050px;
+        left: 250px;
+        width: 60%;
+        transform: translateY(50%);
+    }
+    #partThree{
+        position: absolute;
+        top: 230px;
+        left: 250px;
+        width: 60%;
+        transform: translateY(50%);
+    }
+}
+
+@media screen and (max-width:991px){
+    .story .line{
+        left: 30px;
+    }
+    .story-text{
+        left: 150px!important;
+    }
+}
+
+.point1{
+    transform: scale(0);
+    transform-origin: 60px 60px;
+    transition: 0.5s ease;
+}
+.point2{
+    transform: scale(0);
+    transform-origin: 60px 1195px;
+    transition: 0.5s ease;
+}
+.point3{
+    transform: scale(0);
+    transform-origin: 60px 2460px;
+    transition: 0.5s ease;
+}
+
+footer{
+    height: 40vh;
+    background-color:  rgb(254, 255, 238);
 }
